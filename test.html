@@ -2,175 +2,31 @@
 <html>
 <head>
 <style>
-.grid-4.callout.alert {
-    position: sticky;
-    margin: 3%;
-    background-color: white;
-    border-radius: 23px;
-    width: 90%;
-    opacity: 0.7;
+.grid-3.callout.alert,.grid-4.callout.alert{margin:3%;width:90%;opacity:.7;background-color:#fff}.firstgb,p.secondgb{margin:0 auto 0 21px;font-size:65px}.dot,p.line{background-color:#43cfee}.grid-1.callout.primary,.grid-1.callout.warning,.grid-3.callout.alert,.grid-4.callout.alert{background-color:#fff}.grid-1.callout.primary,.grid-2.callout.warning,.grid-3.callout.alert,.grid-4.callout.alert{border-radius:23px;position:relative}.dot,.dotBorder{border-radius:50%;background-position:left top;-webkit-transition:width .2s;position:absolute;right:0}p.secondgb{padding-top:26%}.grid-2.callout.warning{background-color:#fff;width:75%;margin:3% 9% 3% auto;opacity:.7}p.line{border-radius:10px;height:2%;margin:0 20px 0 21px}span{font-size:23px;padding-left:10px}.firstgb{padding-top:20%;font-weight:800;padding-left:2%;display:flow-root}.dot{height:6%;width:3%;margin:10px}.container{background-color:#4388ed;display:-ms-grid;display:grid;-ms-grid-rows:(1fr)[2];grid-template-rows:repeat(2,1fr);-ms-grid-columns:(1fr)[4];grid-template-columns:repeat(4,1fr);width:100vw;height:100vh}.grid-1.callout.primary{flex-shrink:0;width:106%;margin:3%}.grid-1{-ms-grid-column:1;grid-column-start:1;grid-column-end:3;-ms-grid-row:1;grid-row:1}.grid-2{-ms-grid-column:3;grid-column-start:3;grid-column-end:5;-ms-grid-row:1;grid-row:1}.grid-3{-ms-grid-column:1;grid-column-start:1;grid-column-end:3;-ms-grid-row:2;grid-row:2}.grid-4{-ms-grid-column:3;grid-column-start:3;grid-column-end:5;-ms-grid-row:2;grid-row:2}@media screen and (max-width:60em){.container{-ms-grid-rows:(1fr)[4];grid-template-rows:repeat(4,1fr)}.grid-1{-ms-grid-column:1;grid-column-start:1;grid-column-end:5;-ms-grid-row:1;grid-row:1}.grid-2{-ms-grid-column:1;grid-column-start:1;grid-column-end:5;-ms-grid-row:2;grid-row:2}.grid-3{-ms-grid-column:1;grid-column-start:1;grid-column-end:5;-ms-grid-row:3;grid-row:3}.grid-4{-ms-grid-column:1;grid-column-start:1;grid-column-end:5;-ms-grid-row:4;grid-row:4}}.callout{margin:2%}.dotBorder{border-color:#43cfee;border-style:solid;height:6%;width:3%;margin:10px}
+@media only screen and (max-device-width: 700px) {
+  .dot {
+    height: 6%;
+    width: 7%;
+    margin: 10px;
 }
-.grid-3.callout.alert {position: sticky;background-color: white;opacity: 0.7;border-radius: 23px;margin: 3%;width: 90%;}
-p.secondgb {
-    margin: 0 auto;
-    margin-left: 21px;
-    margin-right: auto;
-    padding-top: 26%;
-    font-size: 65px;
+.dotBorder
+{
+    height: 6%;
+    width: 7%;
+    margin: 10px;
 }
-.grid-2.callout.warning {
-    background-color: white;
-    width: 75%;
-    margin: 2% auto;
-    border-radius: 23px;
-    position: sticky;
-    opacity: 0.7;
-    margin-right: 9%;
-}
-p.line {
-    background-color: #43cfee;
-    border-radius: 10px;
-    height: 2%;
-    margin: 0 auto;
-    margin-left: 21px;
-    margin-right: 20px;
-}
-span {
-    font-size: 23px;
-    padding-left: 10px;
-}
-.firstgb
-{margin: 0 auto;margin-left: 21px;margin-right: auto;padding-top: 20%;/* text-align: center; */font-weight: 800;font-size: 65px;padding-left: 2%;display: flow-root;}
-.dot {
-  height: 6%;
-  width: 3%;
-  background-color: #43cfee;
-  border-radius: 50%;
-  /* display: block; */
-  /* text-align: right; */
-  margin: 10px;
-  /* clear: left; */
-  background-position: left top;
-  -webkit-transition: width .2s;
-  position:absolute;
-  /* top:0; */
-  right:0;
-}
-.container {
-    background-color: #4388ed;
-}
-.grid-1.callout.primary {
-    background-color: white;
-}
-.grid-1.callout.warning {
-    background-color: white;
-}
-.grid-1.callout.primary {
-    /* text-align: center; */
-    /* border-style: solid; */
-    border-radius: 23px;
-    position: sticky;
-    flex-shrink: 0;
-    width: 106%;
-    margin: 3%;
-}
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[2];
-  grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  width: 100vw;
-  /* flex-shrink: 0; */
-  height: 100vh;
-}
-
-@media screen and (max-width: 60em) {
-  .container {
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
-  }
-}
-
-.grid-1 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-@media screen and (max-width: 60em) {
-  .grid-1 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 1;
-        grid-row: 1;
-  }
-}
-
-.grid-2 {
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-
-@media screen and (max-width: 60em) {
-  .grid-2 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 2;
-        grid-row: 2;
-  }
-}
-
-.grid-3 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-  -ms-grid-row: 2;
-      grid-row: 2;
-}
-
-@media screen and (max-width: 60em) {
-  .grid-3 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 3;
-        grid-row: 3;
-  }
-}
-
-.grid-4 {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 5;
-  -ms-grid-row: 2;
-      grid-row: 2;
-}
-
-@media screen and (max-width: 60em) {
-  .grid-4 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 4;
-        grid-row: 4;
-  }
-}
-
-.callout {
-  margin: 0;
-}
-.callout {
-    margin: 2%;
+.grid-1{
+    height: 70%;
+	}
+	.grid-2{
+    height: 70%;
+	}
+	.grid-3{
+    height: 70%;
+	}
+	.grid-4{
+    height: 70%;
+	}
 }
 </style>
 </head>
@@ -186,19 +42,19 @@ span {
   </div>
 
   <div class="grid-2 callout warning">
-  <p class="dot"><p>
+  <p class="dotBorder"><p>
   <p class="secondgb">5<span>GB<span><p>
   <p class="line"><p>
   </div>
 
   <div class="grid-3 callout alert">
-  <p class="dot"><p>
+  <p class="dotBorder"><p>
    <p class="firstgb">1<span>GB<span><p>
 	<p class="line"><p>
   </div>
 
   <div class="grid-4 callout alert">
-   <p class="dot"><p>
+   <p class="dotBorder"><p>
    <p class="firstgb">1<span>GB<span><p>
 	<p class="line"><p>
   </div>
